@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SoleFinds Ukay — Secondhand & Thrifted Shoes</title>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet"/>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<nav class="navbar navbar-expand-lg sticky-top shadow-sm main-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">Sole<span>Finds</span> Ukay</a>
+    <button class="navbar-toggler border-0 text-white" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+      <i class="bi bi-list fs-4"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
+        <li class="nav-item"><a class="nav-link" href="index.html"><i class="bi bi-house me-1"></i>Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html"><i class="bi bi-info-circle me-1"></i>About</a></li>
+        <li class="nav-item"><a class="nav-link" href="services.html"><i class="bi bi-gear me-1"></i>Services</a></li>
+        <li class="nav-item me-3"><a class="nav-link" href="contact.html"><i class="bi bi-telephone me-1"></i>Contact</a></li>
+        <li class="nav-item"><a class="btn btn-outline-light btn-sm fw-semibold px-3" href="#" data-bs-toggle="modal" data-bs-target="#loginModal">Login</a></li>
+        <li class="nav-item ms-2"><a class="btn btn-brand btn-sm fw-semibold px-3" href="#" data-bs-toggle="modal" data-bs-target="#registerModal">Register</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== HERO SECTION ===== -->
+<section class="hero-section">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-7">
+        <div class="hero-badge"><i class="bi bi-geo-alt-fill me-1"></i>Pasig City's #1 Thrift Shop</div>
+        <h1 class="mb-3">Find Your Next <em>Sole</em> Treasure</h1>
+        <p class="mb-4 fs-6">Quality secondhand & branded shoes at prices that won't break the bank. Curated, cleaned, and ready to wear.</p>
+        <div class="d-flex gap-3 flex-wrap mb-4">
+          <a href="products.html" class="btn btn-brand fw-bold px-4 py-2">
+            <i class="bi bi-fire me-2"></i>Shop Now
+          </a>
+          <a href="about.html" class="btn btn-outline-light fw-bold px-4 py-2">
+            Learn More <i class="bi bi-arrow-right ms-1"></i>
+          </a>
+        </div>
+        <div class="row g-2 text-center">
+          <div class="col-4">
+            <div class="fw-bold fs-4 text-warning">₱80+</div>
+            <div style="font-size:.75rem;color:rgba(255,255,255,.55)">Starting Price</div>
+          </div>
+          <div class="col-4">
+            <div class="fw-bold fs-4 text-warning">16+</div>
+            <div style="font-size:.75rem;color:rgba(255,255,255,.55)">Products</div>
+          </div>
+          <div class="col-4">
+            <div class="fw-bold fs-4 text-warning">7</div>
+            <div style="font-size:.75rem;color:rgba(255,255,255,.55)">Categories</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FEATURES SECTION ===== -->
+<div class="feature-strip" style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 60%, #0f3460 100%); margin-top: 0; padding: 80px 0;">
+  <div class="container">
+    <div class="row g-0">
+      <div class="col-6 col-md-3"><div class="feature-item" style="border-right: none; text-align: center;"><div class="fi">✨</div><h6 style="color: #fff;">Curated & Cleaned</h6><p style="color: rgba(255,255,255,.7);">Every pair is inspected before listing.</p></div></div>
+      <div class="col-6 col-md-3"><div class="feature-item" style="border-right: none; text-align: center;"><div class="fi">💸</div><h6 style="color: #fff;">Honest Pricing</h6><p style="color: rgba(255,255,255,.7);">₱80–₱1,500. No hidden fees.</p></div></div>
+      <div class="col-6 col-md-3"><div class="feature-item" style="border-right: none; text-align: center;"><div class="fi">📦</div><h6 style="color: #fff;">Mystery Box</h6><p style="color: rgba(255,255,255,.7);">Surprise branded pairs at low prices.</p></div></div>
+      <div class="col-6 col-md-3"><div class="feature-item" style="border-right: none; text-align: center;"><div class="fi">🎁</div><h6 style="color: #fff;">Suki Rewards</h6><p style="color: rgba(255,255,255,.7);">Every 5 purchases = 1 free pair!</p></div></div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== LOGIN MODAL ===== -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header border-0">
+        <h5 class="modal-title fw-bold">Welcome Back</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form id="loginForm">
+          <div class="mb-3">
+            <label for="loginEmail" class="form-label fw-semibold">Email Address</label>
+            <input type="email" class="form-control" id="loginEmail" placeholder="Enter your email" required>
+          </div>
+          <div class="mb-3">
+            <label for="loginPassword" class="form-label fw-semibold">Password</label>
+            <input type="password" class="form-control" id="loginPassword" placeholder="Enter your password" required>
+          </div>
+          <button type="submit" class="btn btn-brand w-100 fw-bold py-2">Sign In</button>
+          <p class="text-center mt-3 small">Don't have an account? <a href="#" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#registerModal" class="text-decoration-none">Sign Up</a></p>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== REGISTER MODAL ===== -->
+<div class="modal fade" id="registerModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header border-0">
+        <h5 class="modal-title fw-bold">Create Account</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form id="registerForm">
+          <div class="mb-3">
+            <label for="registerName" class="form-label fw-semibold">Full Name</label>
+            <input type="text" class="form-control" id="registerName" placeholder="Enter your full name" required>
+          </div>
+          <div class="mb-3">
+            <label for="registerEmail" class="form-label fw-semibold">Email Address</label>
+            <input type="email" class="form-control" id="registerEmail" placeholder="Enter your email" required>
+          </div>
+          <div class="mb-3">
+            <label for="registerPassword" class="form-label fw-semibold">Password</label>
+            <input type="password" class="form-control" id="registerPassword" placeholder="Create a password" required>
+          </div>
+          <div class="mb-3">
+            <label for="registerConfirm" class="form-label fw-semibold">Confirm Password</label>
+            <input type="password" class="form-control" id="registerConfirm" placeholder="Confirm your password" required>
+          </div>
+          <button type="submit" class="btn btn-brand w-100 fw-bold py-2">Create Account</button>
+          <p class="text-center mt-3 small">Already have an account? <a href="#" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#loginModal" class="text-decoration-none">Sign In</a></p>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Auth Functions -->
+<script>
+document.getElementById('loginForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+  const email = document.getElementById('loginEmail').value;
+  const password = document.getElementById('loginPassword').value;
+  
+  // Basic validation (in production, validate against backend)
+  if (email && password) {
+    localStorage.setItem('userEmail', email);
+    localStorage.setItem('isLoggedIn', 'true');
+    alert('Welcome back! Redirecting to shop...');
+    // Close modal and redirect
+    const modal = bootstrap.Modal.getInstance(document.getElementById('loginModal'));
+    modal.hide();
+    window.location.href = 'products.html';
+  }
+});
+
+document.getElementById('registerForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+  const name = document.getElementById('registerName').value;
+  const email = document.getElementById('registerEmail').value;
+  const password = document.getElementById('registerPassword').value;
+  const confirm = document.getElementById('registerConfirm').value;
+  
+  if (password !== confirm) {
+    alert('Passwords do not match!');
+    return;
+  }
+  
+  if (name && email && password) {
+    localStorage.setItem('userName', name);
+    localStorage.setItem('userEmail', email);
+    alert('Account created! Now please sign in.');
+    // Close register modal and open login modal
+    const registerModal = bootstrap.Modal.getInstance(document.getElementById('registerModal'));
+    registerModal.hide();
+    // Clear login form and open login modal
+    document.getElementById('loginForm').reset();
+    const loginModal = new bootstrap.Modal(document.getElementById('loginModal'));
+    loginModal.show();
+  }
+});
+</script>
+</body>
+</html>
